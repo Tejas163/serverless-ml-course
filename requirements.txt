@@ -1,11 +1,10 @@
 faker
 parsedatetime
 hopsworks
-nbconvert
-scikit-learn
-plotly
-Pillow
-seaborn
+nbconvert==6.5.4
+scikit-learn==1.2.2
+plotly==5.13.1
+Pillow==8.4.0
+seaborn==0.12.2
 dataframe-image
 streamlit_folium
-plotly
