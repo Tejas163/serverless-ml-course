@@ -18,13 +18,16 @@ jobs:
       - name: setup python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.8'
+          python-version: '3.8.x'
           cache: 'pip'
           
       - name: install python packages
         run: |
           python -m pip install --upgrade pip
           pip install --upgrade --upgrade-strategy eager -r requirements.txt
+          
+      - name: install ipython kernel
+        run: pip install ipython
           
       - name: Install Jupyter Notebook kernel
         run: python -m ipykernel install --user --name=python3
