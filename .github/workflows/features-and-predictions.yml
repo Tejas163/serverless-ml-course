@@ -27,7 +27,7 @@ jobs:
           pip install --upgrade --upgrade-strategy eager -r requirements.txt
           
       - name: install ipython kernel
-        run: pip install ipython
+        run: python3 -m pip install ipykernel
           
       - name: Install Jupyter Notebook kernel
         run: python -m ipykernel install --user --name=python3
