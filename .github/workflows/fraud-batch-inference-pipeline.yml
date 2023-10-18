@@ -15,7 +15,7 @@ jobs:
       - name: setup python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.8.1-96747'
+          python-version: 'python-3.8.1-win32-x64'
           
       - name: install python packages
         run: |
